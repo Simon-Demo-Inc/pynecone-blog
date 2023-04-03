@@ -1,0 +1,10 @@
+prepare:
+  steps:
+    - name: Set node version
+      command: sudo -u admin n 16.13.2
+test:
+  steps: []
+run:
+  steps:
+    - name: Run server
+      command: pipenv run pc run
